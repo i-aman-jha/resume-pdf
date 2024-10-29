@@ -12,22 +12,6 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  // late PrintingInfo printingInfo;
-  //
-  // @override
-  // void initState() {
-  //   // TODO: implement initState
-  //   super.initState();
-  //   _init();
-  // }
-  //
-  // Future<void> _init() async {
-  //   final info = await Printing.info();
-  //   setState(() {
-  //     printingInfo = info;
-  //   });
-  // }
-
   void _showPrintedToast(BuildContext context) {
     ScaffoldMessenger.of(context)
         .showSnackBar(const SnackBar(content: Text("Document shared.....")));
